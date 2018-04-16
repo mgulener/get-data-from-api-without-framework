@@ -1,0 +1,29 @@
+body {
+	font-family: Arial;
+	font-size:12px;
+}
+table {
+	width: 100%;
+	thead tr th,
+	tbody tr td {
+		padding:4px 8px;
+	}
+	thead {
+		tr {
+			th {
+				background-color: #ccc;
+			}
+		}
+	}
+	tbody {
+		tr {
+			&:nth-child(even) {
+				background-color: #eee;
+			}
+			&:nth-child(odd) {
+				background-color: #fff;
+			}
+		}
+
+	}
+}
