@@ -27,13 +27,13 @@ var timeConverter = function(UNIX_timestamp) {
     return time;
 }
 
-var appendHtml = function(table, dest) {
-    document.querySelector(dest).innerHTML = table;
+var appendHtml = function(output, dest) {
+    document.querySelector(dest).innerHTML = output;
 }
 
 window.onload = function() {
     var htmlTemp = "";
-    getJSON('https://www.instagram.com/explore/tags/paylasmaningucu/?__a=1',
+    getJSON('https://www.instagram.com/explore/tags/instagram/?__a=1',
         function(err, data) {
             if (err !== null) {
                 console.log('Something went wrong: ' + err);
