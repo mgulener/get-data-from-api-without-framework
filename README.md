@@ -1,6 +1,6 @@
 <h2>Javascript</h2>
 Get data from url (json format) and call getJSON function's callback.
-<pre>
+```javascript
 var getJSON = function(url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
@@ -15,10 +15,10 @@ var getJSON = function(url, callback) {
     };
     xhr.send();
 };
-</pre>
+```
 
 I use an instagram api as a sample. You can use another api that return a json format data.
-<pre>
+```javascript
 window.onload = function() {
     var htmlTemp = "";
     getJSON('https://www.instagram.com/explore/tags/instagram/?__a=1',
@@ -34,6 +34,6 @@ window.onload = function() {
         }
     );
 }
-</pre>
+```
 <h2>jsfiddle</h2>
 https://jsfiddle.net/mgulener/1bnh5brp/1/
