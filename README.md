@@ -1,5 +1,6 @@
 <h2>Javascript</h2>
 Get data from url (json format) and call getJSON function's callback.
+
 ```javascript
 var getJSON = function(url, callback) {
     var xhr = new XMLHttpRequest();
@@ -33,7 +34,7 @@ window.onload = function() {
             }
         }
     );
-}
+};
 ```
 <h2>jsfiddle</h2>
 https://jsfiddle.net/mgulener/1bnh5brp/1/
